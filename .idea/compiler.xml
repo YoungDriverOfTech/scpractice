@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
         <module name="eurekaclient" />
+        <module name="zuul" />
         <module name="consumer" />
         <module name="resttemplate" />
       </profile>
@@ -20,6 +21,7 @@
       <module name="eurekaclient" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
       <module name="resttemplate" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>

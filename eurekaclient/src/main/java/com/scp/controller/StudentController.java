@@ -3,6 +3,7 @@ package com.scp.controller;
 import com.scp.entity.Student;
 import com.scp.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
@@ -13,6 +14,9 @@ public class StudentController {
 
     @Autowired
     private StudentRepository studentRepository;
+
+    @Value("${server.port}")
+    private String port;
 
     @GetMapping("/findAll")
     public Collection<Student> findAll() {
@@ -37,5 +41,10 @@ public class StudentController {
     @DeleteMapping("deleteById/{id}")
     public void deleteById(@PathVariable("id") long id) {
         studentRepository.deleteById(id);
+    }
+
+    @GetMapping("/index")
+    public String index() {
+        return "Current Port is " + port;
     }
 }
