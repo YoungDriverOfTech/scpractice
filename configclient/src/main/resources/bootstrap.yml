@@ -1,11 +1,11 @@
 spring:
   cloud:
     config:
-      name: configclient
-      label: master
+      name: configclient # 当前服务注册在eureka上的名称，与远程仓库的配置文件名对应
+      label: master # Git 上面分支的名称
       discovery:
-        enabled: true
-        service-id: configserver # 在厨厕中心里面去找这个名字的服务
+        enabled: true # 是否开启config服务发现支持
+        service-id: configserver # 在注册中心里面去找这个配置中心的名字
 eureka:
   client:
     service-url:
