@@ -16,6 +16,7 @@
         <module name="configserver" />
         <module name="eurekaserver" />
         <module name="configclient" />
+        <module name="zipkinclient" />
         <module name="eurekaclient" />
         <module name="feign" />
         <module name="consumer" />
@@ -37,6 +38,7 @@
       <module name="resttemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="zipkin" options="-parameters" />
+      <module name="zipkinclient" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
