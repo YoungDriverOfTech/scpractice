@@ -1,0 +1,15 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: nativeconfigserver
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+# profiles.active 配置文件的获取方式，native表示从本地去去
+# cloud.config.server.native.search-locations 本地配置文件存放的路径
+# classpath 指的就是resources，那么在resources文件夹下面创建shared文件夹，然后把配置文件放入shared里面，就能取到配置

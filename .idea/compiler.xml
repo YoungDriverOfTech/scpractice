@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
         <module name="hystrix" />
+        <module name="nativeconfigserver" />
         <module name="ribbon" />
         <module name="eurekaclient" />
         <module name="zuul" />
@@ -25,6 +26,7 @@
       <module name="eurekaserver" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="hystrix" options="-parameters" />
+      <module name="nativeconfigserver" options="-parameters" />
       <module name="resttemplate" options="-parameters" />
       <module name="ribbon" options="-parameters" />
       <module name="zuul" options="-parameters" />

@@ -17,6 +17,7 @@
         <module>ribbon</module>
         <module>feign</module>
         <module>hystrix</module>
+        <module>nativeconfigserver</module>
     </modules>
 
     <properties>
