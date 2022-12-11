@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8762
+      fail-fast: true
+# 查找的方法是把name和active用-连接起来，组成一个文件名字，然后去配置中心找。那么组成的名字就是 【configclient-dev】
+# cloud.config.url 去哪里找配置文件，配置本地 Config Server的访问路径
+# fail-fast 设置客户端优先判断Config Server是否获取正常
