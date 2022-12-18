@@ -16,4 +16,8 @@ public class ZipkinHandler {
     public String index() {
         return this.port;
     }
+
+    public static void main(String[] args) {
+        System.out.println("Hello");
+    }
 }
